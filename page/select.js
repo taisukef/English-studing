@@ -126,5 +126,6 @@ function checkSentence() {
 
 window.onload = function() {
     displaySentence();
-    document.getElementById("check-button").addEventListener("click", checkSentence);
+    document.getElementById("button-check").onclick = () => checkSentence();
 };
+

@@ -149,3 +149,6 @@ document.getElementById("user-translation").addEventListener("keydown", function
 
 // 初期化
 displayRandomSentence();
+
+document.getElementById("button-check").onclick = () => checkTranslation();
+document.getElementById("button-next").onclick = () => restartExercise();

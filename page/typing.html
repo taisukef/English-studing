@@ -18,16 +18,16 @@
             <div id="japanese-sentence" class="sentence-box"></div>
             <div class="input-container">
                 <input type="text" id="user-translation" placeholder="英語で答えてください"  autocomplete="off"  spellcheck="false">
-                <button onclick="checkTranslation()" class="btn primary">チェック</button>
+                <button id="button-check" class="btn primary">チェック</button>
             </div>
             <div id="result" class="result-box"></div>
-            <button onclick="restartExercise()" class="btn secondary">次の問題</button>
+            <button id="button-next" class="btn secondary">次の問題</button>
         </div>
     </main>
     <footer>
         <p>© 2024 英語学習アプリ</p>
     </footer>
 </div>
-<script src="typing.js"></script>
+<script type="module" src="typing.js"></script>
 </body>
 </html>
