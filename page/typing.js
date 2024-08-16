@@ -1,6 +1,7 @@
 import { CSV } from "https://code4fukui.github.io/CSV/CSV.js";
 
-const sentences = await CSV.fetchJSON("../data/sentences.csv");
+const url = location.hash || "../data/sentences.csv";
+const sentences = await CSV.fetchJSON(url);
 
 let correctTranslation = '';
 let currentSentenceIndex = -1;

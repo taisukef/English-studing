@@ -1,6 +1,7 @@
 import { CSV } from "https://code4fukui.github.io/CSV/CSV.js";
 
-const sentences = await CSV.fetchJSON("../data/sentences.csv");
+const url = location.hash || "../data/sentences.csv";
+const sentences = await CSV.fetchJSON(url);
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
