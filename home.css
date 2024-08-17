@@ -78,6 +78,9 @@ footer {
     .app-container {
         padding: 1rem;
     }
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .card {
         padding: 1.5rem;
