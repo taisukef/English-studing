@@ -1,6 +1,6 @@
 import { CSV } from "https://code4fukui.github.io/CSV/CSV.js";
 
-const url = location.hash || "../data/sentences.csv";
+const url = location.hash.substring(1) || "../data/sentences.csv";
 const sentences = await CSV.fetchJSON(url);
 
 let correctTranslation = '';
